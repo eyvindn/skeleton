@@ -7,3 +7,12 @@ CREATE TABLE receipts (
 
   PRIMARY KEY (id)
 );
+
+CREATE TABLE tagMap (
+  id INT UNSIGNED AUTO_INCREMENT,
+
+  receiptId INT UNSIGNED,
+  name VARCHAR(255),
+
+  PRIMARY KEY (id)
+);
